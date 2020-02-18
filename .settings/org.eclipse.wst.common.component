@@ -6,7 +6,7 @@
         <dependent-module archiveName="HotelDatabase-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HotelDatabase/HotelDatabase">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="HotelWebAppTests"/>
         <property name="java-output-path" value="/HotelWebAppTests/target/classes"/>
+        <property name="context-root" value="HotelWebAppTests"/>
     </wb-module>
 </project-modules>

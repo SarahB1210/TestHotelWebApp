@@ -5,7 +5,7 @@
   <groupId>fr</groupId>
   <artifactId>HotelWebAppTests</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   
   <name>HotelWebAppTests</name>
   <url>http://maven.apache.org</url>
@@ -48,7 +48,17 @@
     	<version>3.13.0</version>
     </dependency>
   </dependencies>
+  
   <build>
-    <finalName>HotelWebapp</finalName>
-  </build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.0.0</version>
+      <configuration>
+        <webappDirectory>src/main/webapp</webappDirectory>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
 </project>
