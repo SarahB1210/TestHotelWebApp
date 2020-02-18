@@ -26,7 +26,7 @@ public class HotelWebApp_Test {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 
-		driver.get("http://192.168.102.51:9999/HotelWebapp/");
+		driver.get("http://192.168.102.189:9999/HotelWebapp/");
 	}
 
 	@After
