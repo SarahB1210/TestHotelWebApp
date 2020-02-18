@@ -35,10 +35,11 @@ public class HotelWebApp_Test {
 	}
 
 	@Test
-	public void Test1() {
+	public void Test1() throws InterruptedException {
 
 
 		PageAccueil page_accueil = PageFactory.initElements(driver, PageAccueil.class);
+		Thread.sleep(2000);
 		PageIndex page_index = page_accueil.search_city(driver);
 
 		List<String> hotel_list= new ArrayList<String>() ;
