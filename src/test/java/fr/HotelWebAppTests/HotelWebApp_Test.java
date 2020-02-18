@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class HotelWebApp_Test {
-	WebDriver driver = new FirefoxDriver();
+	WebDriver driver = new ChromeDriver();
 
 	@Before
 	public void setUp() throws MalformedURLException {
