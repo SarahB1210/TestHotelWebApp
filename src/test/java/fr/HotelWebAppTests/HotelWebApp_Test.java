@@ -26,7 +26,7 @@ public class HotelWebApp_Test {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 
-		driver.get("http://localhost:8080/HotelWebapp/");
+		driver.get("http://localhost:8090/HotelWebapp/");
 	}
 
 	@After
