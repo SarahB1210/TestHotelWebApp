@@ -2,6 +2,7 @@ package fr.HotelWebAppTests;
 
 import static org.junit.Assert.*;
 
+
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +18,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class HotelWebApp_Test {
-	WebDriver driver = new ChromeDriver();
-
+	WebDriver driver;
+	
+	
 	@Before
 	public void setUp() throws MalformedURLException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+
 		driver.get("http://192.168.102.51:9999/HotelWebapp/");
 	}
 
